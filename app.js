@@ -43,7 +43,7 @@ document.getElementById('book-form').addEventListener('submit',
             author = document.getElementById('author').value,
             isbn = document.getElementById('isbn').value;
 
-        // Instaantiate a book
+        // Instantiate a book
         const book = new Book(title, author, isbn);
 
         // Instantiate UI object
