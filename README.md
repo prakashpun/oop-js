@@ -3,3 +3,6 @@ A basic demo project to explore Object Oriented Programming concepts in JavaScri
 
 # Screenshot
 ![BookList_JS_OOP](https://user-images.githubusercontent.com/3445361/59620133-bb264b80-9149-11e9-87ce-57bce8297654.png)
+
+# Libraries
+[Skeleton CSS](https://cdnjs.com/libraries/skeleton)
