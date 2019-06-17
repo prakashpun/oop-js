@@ -1,7 +1,7 @@
 # Object Oriented Concepts in ES5 and ES6
 A basic demo project to explore Object Oriented Programming concepts in JavaScript ES5 and ES6.
 
-# Demo
+# Demo Project here
 [Book List](https://prakashpun.github.io/oop-js/)
 
 # Screenshot
