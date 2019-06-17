@@ -1,4 +1,4 @@
-// ES5 Object Oriented Programming
+// ES5 Object Oriented Programming classes
 
 // Book Constructor
 function Book(title, author, isbn) {
