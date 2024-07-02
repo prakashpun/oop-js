@@ -20,29 +20,85 @@
         .error {
             background: red;
         }
+        .modal{
+            width: 80%;
+            margin:20px;
+            display: none;
+        }
+        .modalshow{
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            background-color: rgba(0,0,0,0.8);
+            padding: 20px;
+            left: 0;
+            top:0 ;
+        }
+        .modalshow form{
+            /* width: 80%; */
+            margin:10px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
     <title>Book List</title>
 </head>
 <body>
     <div class="container">
-        <h1>Add Book</h1>
-        <form id="book-form">
-            <div>
-                <label for="title">Title</label>
-                <input type="text" id="title" class="u-full-width">
-            </div>
-            <div>
-                <label for="author">Author</label>
-                <input type="text" id="author" class="u-full-width">
-            </div>
-            <div>
-                <label for="isbn">ISBN</label>
-                <input type="text" id="isbn" class="u-full-width">
-            </div>
-            <div>
-                <input type="submit" value="Submit" class="u-full-width">
-            </div>
-        </form>
+        <!-- Add Form -->
+        <div class="addformdiv">
+            <form id="book-form">
+                <h1>Add Book</h1>
+
+                <div>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" class="u-full-width">
+                </div>
+                <div>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" class="u-full-width">
+                </div>
+                <div>
+                    <label for="isbn">ISBN</label>
+                    <input type="text" id="isbn" class="u-full-width">
+                </div>
+                <div>
+                    <input type="submit" value="ADD BOOK" class="u-full-width">
+                </div>
+            </form>
+
+        </div>
+        
+
+        <!-- Edit Form -->
+        <div class="modal">
+            <form id="mform">
+                <h3>EDIT BOOK</h3>
+    
+                <div>
+                    <label for="mtitle">Title</label>
+                    <input type="text" id="mtitle" class="u-full-width">
+                </div>
+                <div>
+                    <label for="author">Author</label>
+                    <input type="text" id="mauthor" class="u-full-width">
+                </div>
+                <div>
+                    <label for="isbn">ISBN</label>
+                    <input type="text" id="misbn" class="u-full-width" disabled>
+                </div>
+                <div>
+                    <input type="submit" value="EDIT BOOK" class="u-full-width">
+                </div>
+            </form>
+        </div>
 
         <table class="u-full-width">
             <thead>
@@ -58,6 +114,8 @@
             </tbody>
         </table>
     </div>
+
+
     <script src="appes6.js"></script>
 </body>
 </html>
